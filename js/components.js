@@ -172,7 +172,6 @@ export const LandingBody = (locale, homePath) => {
             en: `Register patients and use their information in various
             registers.`
         }[locale]}
-          
         </p>
         ${LearnMoreButton(locale, homePath)}
       </div>
@@ -180,15 +179,28 @@ export const LandingBody = (locale, homePath) => {
     <section class="l-r-section">
       <div class="l-r-section-child l">
         <p class="large-title">
-          Laissez-nous aggréger vos données primaires et produire le rapport
-          pour vous
+        ${{
+            fr: `Laissez-nous aggréger vos données primaires et produire le rapport
+            pour vous`,
+            en: `Let us aggregate your primary data and produce the report
+            for you`
+        }[locale]}
+          
         </p>
         <p class="p-medium">
-          Le but est de permettre aux agents de sante communautaire de se
-          concentrer sur les activités promotionnelles, préventives et curative
-          ansi que la collecte de données primaires. OpenCarenet CHE effectue
-          l'agrégation des données et produit un rapport mensuel selon vos
-          modèles de reporting DHIS2.
+        ${{
+            fr: `Le but est de permettre aux agents de sante communautaire de se
+            concentrer sur les activités promotionnelles, préventives et curative
+            ansi que la collecte de données primaires. OpenCarenet CHE effectue
+            l'agrégation des données et produit un rapport mensuel selon vos
+            modèles de reporting DHIS2.`,
+            en: `The aim is to enable community health workers to
+            focus on promotional, preventive and curative activities
+            as well as the collection of primary data. OpenCarenet CHE performs
+            data aggregation and produces a monthly report according to your
+            DHIS2 reporting models.`
+        }[locale]}
+
         </p>
         ${LearnMoreButton(locale, homePath)}
       </div>
@@ -202,23 +214,43 @@ export const LandingBody = (locale, homePath) => {
       </div>
       <div class="l-r-section-child l">
         <p class="large-title">
-          Cela convient également à ceux qui travaillent dans les zones rurales
-          où l'accès à Internet est difficile.
+        ${{
+            fr: `  Cela convient également à ceux qui travaillent dans les zones rurales
+            où l'accès à Internet est difficile.`,
+            en: `Suitable for those who work in rural areas
+            where Internet access is difficult.`
+        }[locale]}
+        
         </p>
         <p class="p-medium">
-          Synchronisez vos données lorsque vous êtes connecté à Internet,
-          travaillez hors ligne et envoyez à tout moment votre rapport mensuel.
+        ${{
+            fr: `      Synchronisez vos données lorsque vous êtes connecté à Internet,
+            travaillez hors ligne et envoyez à tout moment votre rapport mensuel.`,
+            en: `Synchronize your data when you are connected to the Internet,
+            work offline and send your monthly report at any time.`
+        }[locale]}
+    
         </p>
         ${LearnMoreButton(locale, homePath)}
       </div>
     </section>
     <section class="l-r-section">
       <div class="l-r-section-child l">
-        <p class="large-title">Interopérable avec DHIS2</p>
+    
+   
+        <p class="large-title">  ${{
+            fr: `Interopérable avec DHIS2`,
+            en: `Interoperable with DHIS2`
+        }[locale]}</p>
         <p class="p-medium">
-          Les organisations qui utilisent DHIS2 pour la collecte, la
-          notification, l'analyse et la distribution peuvent utiliser
-          OpenCarenet CHE pour la collecte de données primaires.
+        ${{
+            fr: `Les organisations qui utilisent DHIS2 pour la collecte, la
+            notification, l'analyse et la distribution peuvent utiliser
+            OpenCarenet CHE pour la collecte de données primaires.`,
+            en: `Organizations that use DHIS2 for collection,
+            notification, analysis and distribution can use
+            OpenCarenet CHE for primary data collection.`
+        }[locale]}
         </p>
         ${LearnMoreButton(locale, homePath)}
       </div>
