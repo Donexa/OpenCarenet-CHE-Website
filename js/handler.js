@@ -1,3 +1,3 @@
 function displayMenu(transform) {
-    document.querySelector('.nav-menu-holder').style.transform = `scaleY(${transform})`;
+    document.querySelector('.nav-menu').style.transform = `scaleX(${transform})`;
 }
