@@ -18,7 +18,7 @@
   --bgColor: rgb(248, 250, 252);
   --text: #424242;
   --title: black;
-  --inverse: rgb(53, 25, 0);
+  --inverse: rgb(42, 19, 0);
   --highlight: white;
 }
 
@@ -179,12 +179,20 @@ nav {
   color: white;
 }
 
+.curtain h1{
+  font-weight: 800;
+}
+
 .l-r-section {
   width: 100%;
   height: auto;
   padding: 10rem;
   display: flex;
   align-items: center;
+}
+
+.l-r-section-child .large-title {
+  font-weight: 800;
 }
 
 .l-r-section-colored {
@@ -251,17 +259,16 @@ footer {
   font-weight: 600;
 }
 
-
-.descr{
+.descr {
   font-size: smaller;
 }
 
-.footer-item a{
+.footer-item a {
   color: white;
 }
 
-.f-closer{
-  border-top: .01rem solid gray;
+.f-closer {
+  border-top: 0.01rem solid gray;
   margin-top: 3rem;
   padding-top: 3rem;
   display: flex;
@@ -271,7 +278,7 @@ footer {
   width: 100%;
 }
 
-.f-closer .social-medias{
+.f-closer .social-medias {
   width: 100%;
   display: flex;
   align-items: center;
@@ -279,17 +286,17 @@ footer {
   column-gap: 2rem;
 }
 
-.f-closer .social-medias i{
+.f-closer .social-medias i {
   font-size: 2rem;
   color: var(--greenWhite);
 }
 
-.f-closer p{
+.f-closer p {
   font-size: smaller;
   color: white;
 }
 
-#locale-changer{
+#locale-changer {
   height: 2.5rem;
   padding: 0rem 2rem;
   border-radius: 3rem;
