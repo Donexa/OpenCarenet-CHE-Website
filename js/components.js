@@ -57,7 +57,7 @@ export const Footer = (locale, homePath) => {
     <div class="f-menu">
     <div class="footer-item f-logo">
       <div class="logo">
-        <img alt="OpenCarent CHE logo" src="./images/oche.png" />
+        <img alt="OpenCarent CHE logo" src="${homePath}images/oche.png" />
         <p class="p-medium">${dic['name'][locale]}</p>
       </div>
       <p class="descr">${dic['description'][locale]}</p>
@@ -65,7 +65,7 @@ export const Footer = (locale, homePath) => {
     </div>
     <div class="footer-item">
       <p>${dic['our-mission'][locale]}</p>
-      <a class="p-medium">${{ fr: "Fonctionnalités", en: "Features" }[locale]}</a>
+      <a href="${homePath}features" class="p-medium">${{ fr: "Fonctionnalités", en: "Features" }[locale]}</a>
       <a class="p-medium">${{ fr: "Implémentations", en: "Implementations" }[locale]}</a>
       <a class="p-medium">${{ fr: "Securité", en: "Security" }[locale]}</a>
     </div>
@@ -104,7 +104,7 @@ export const Footer = (locale, homePath) => {
 export const NavBar = (locale, homePath) => {
   return `
         <div class="logo">
-            <img alt="${dic['name'][locale]} logo" src="./images/oche.png" />
+            <img alt="${dic['name'][locale]} logo" src="${homePath}images/oche.png" />
             <p class="p-medium">${dic['name'][locale]}</p>
         </div>
         <div class="nav-menu">
@@ -128,7 +128,7 @@ export const LandingBody = (locale, homePath) => {
   return `
     <section id="landing">
       <img
-        src="./images/landing.jpg"
+        src="${homePath}images/landing.jpg"
         alt="OpenCarenet Community Health Edition"
       />
       <div class="curtain">
@@ -168,12 +168,12 @@ export const LandingBody = (locale, homePath) => {
         ${LearnMoreButton(locale, homePath)}
       </div>
       <div class="l-r-section-child img-side">
-        <img src="./images/registers.jpg" alt="${dic['name'][locale]} Home" />
+        <img src="${homePath}images/registers.jpg" alt="${dic['name'][locale]} Home" />
       </div>
     </section>
     <section class="l-r-section l-r-section-colored col-reversed">
       <div class="l-r-section-child img-side">
-        <img src="./images/patients.png" alt="${dic['name'][locale]} Home" />
+        <img src="${homePath}images/patients.png" alt="${dic['name'][locale]} Home" />
       </div>
       <div class="l-r-section-child l">
         <p class="large-title">
@@ -222,12 +222,12 @@ export const LandingBody = (locale, homePath) => {
         ${LearnMoreButton(locale, homePath)}
       </div>
       <div class="l-r-section-child img-side">
-        <img src="./images/report.jpg" alt="${dic['name'][locale]} Home" />
+        <img src="${homePath}images/report.jpg" alt="${dic['name'][locale]} Home" />
       </div>
     </section>
     <section class="l-r-section col-reversed">
       <div class="l-r-section-child img-side">
-        <img src="./images/sync.png" alt="${dic['name'][locale]} Home" />
+        <img src="${homePath}images/sync.png" alt="${dic['name'][locale]} Home" />
       </div>
       <div class="l-r-section-child l">
         <p class="large-title">
@@ -272,7 +272,7 @@ export const LandingBody = (locale, homePath) => {
         ${LearnMoreButton(locale, homePath)}
       </div>
       <div class="l-r-section-child img-side">
-        <img src="./images/1 (2).png" alt="${dic['name'][locale]} Home" />
+        <img src="${homePath}images/1 (2).png" alt="${dic['name'][locale]} Home" />
       </div>
     </section>
     `;
