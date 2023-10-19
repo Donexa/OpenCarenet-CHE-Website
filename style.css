@@ -132,6 +132,7 @@ nav {
   justify-content: center;
   column-gap: 3rem;
   font-size: small;
+  transform: scaleX(1);
 }
 
 #nav-icon {
@@ -143,7 +144,7 @@ nav {
   font-weight: 500;
 }
 
-.nav-menu .nav-header{
+.nav-menu .nav-header {
   display: none;
 }
 
@@ -314,6 +315,12 @@ footer {
   background-color: var(--greenWhite);
 }
 
+@media screen and (max-width: 5024px) {
+  .nav-menu {
+    transform: scaleX(1);
+  }
+}
+
 
 @media screen and (max-width: 1024px) {
 
@@ -357,7 +364,7 @@ footer {
   }
 
 
-  .nav-menu .nav-header{
+  .nav-menu .nav-header {
     display: flex;
     justify-content: space-between;
     width: 100%;

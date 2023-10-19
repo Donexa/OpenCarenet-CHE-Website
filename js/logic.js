@@ -1,4 +1,4 @@
-import { NavBar, Footer, LandingBody } from './components.js';
+import { NavBar, Footer, LandingBody, DocTitle, DocDescription } from './components.js';
 
 const homePath = localStorage.getItem('home') ?? '/';
 const cLocale = localStorage.getItem('locale') ?? 'en';
@@ -16,6 +16,8 @@ function insertTemplates({ locale = 'fr' }) {
     innerHTML('#nav', NavBar(locale, homePath));
     innerHTML('#footer', Footer(locale, homePath));
     innerHTML('#landingBody', LandingBody(locale, homePath));
+    innerHTML('#title', DocTitle(locale, homePath));
+    innerHTML('#description', DocDescription(locale, homePath));
     selectListener({
         key: "locale-changer", onChange: (value) => {
             insertTemplates({ locale: value });

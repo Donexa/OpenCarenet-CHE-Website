@@ -33,6 +33,16 @@ export const DownloadButton = (locale, homePath) => {
   return `<a class="a-buttoned"><i class="fa fa-download"></i> ${dic['download'][locale]}</a>`
 }
 
+
+export const DocTitle = (locale, homePath) => {
+  return `OpenCarenet CHE |  ${dic['description'][locale]}`
+}
+
+export const DocDescription = (locale, homePath) => {
+  return `${dic['description'][locale]}`
+}
+
+
 export const LearnMoreButton = (locale, homePath) => {
   return `        <a class="a-buttoned"
     >${{
