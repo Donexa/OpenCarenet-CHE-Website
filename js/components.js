@@ -103,10 +103,12 @@ export const Footer = (locale, homePath) => {
 
 export const NavBar = (locale, homePath) => {
   return `
-        <div class="logo">
+        <a href="${homePath}">
+          <div class="logo">
             <img alt="${dic['name'][locale]} logo" src="${homePath}images/oche.png" />
             <p class="p-medium">${dic['name'][locale]}</p>
-        </div>
+          </div>
+        </a>
         <div class="nav-menu">
             <div class="nav-header">
               <div></div>
@@ -261,12 +263,12 @@ export const LandingBody = (locale, homePath) => {
     }[locale]}</p>
         <p class="p-medium">
         ${{
-      fr: `Les organisations qui utilisent DHIS2 pour la collecte, la
+      fr: `Les Systèmes d'Information Sanitaire (SIS) qui utilisent DHIS2 pour la collecte, la
             notification, l'analyse et la distribution peuvent utiliser
             OpenCarenet CHE pour la collecte de données primaires.`,
-      en: `Organizations that use DHIS2 for collection,
-            notification, analysis and distribution can use
-            OpenCarenet CHE for primary data collection.`
+      en: `Health Information Systems (HISYS) that use DHIS2 for collection,
+      notification, analysis and distribution can use
+      OpenCarenet CHE for primary data collection.`
     }[locale]}
         </p>
         ${LearnMoreButton(locale, homePath)}
